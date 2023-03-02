@@ -1,0 +1,18 @@
+index.js -> call all the layers
+
+services ->
+ - bussiness logic
+ - external layer (api, databases, files)
+
+ views -> dom interaction (html)
+
+ controllers -> middleware between services and/or workers and views
+
+ factories -> imports the dependencies
+  - create the final objects to make the calls
+  - return the function that initialize the flow for that component (init)
+
+ workers -> background process
+  - heavy logic (cpu usage)
+  - all tht blocks the screen (for loop, ai, webcam, etc)
+  - call the bussiness logic from the service
